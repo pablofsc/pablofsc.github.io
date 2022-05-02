@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+
+html {
+    font-family: 'Nunito', sans-serif;
+}
+
+body {
+    background-color: #EEEEEE !important;
+    animation: fadeInAnimation ease 1.5s;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.area {
+    background-color: #D8D2CB;
+    border-radius: 25px;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 10px;
+    padding: 40px 10px 40px 10px;
+    font-family: 'Nunito',
+        sans-serif;
+}
+
+.photo {
+    max-width: 75%;
+    border-radius: 20px;
+    display: block;
+    margin-bottom: 25px;
+}
+
+.networksList {
+    width: 75%;
+}
+
+.networkItem {
+    border-radius: 15px !important;
+    margin: 5px 0 5px 0 !important;
+    background-color: #1C658C !important;
+    color: white !important;
+    border: none !important;
+    transition: 1s;
+}
+
+.networkItem:hover {
+    background-color: #398AB9 !important;
+    transition: 0.25s;
+}
+
+.Sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mainContent {
+    padding: 40px;
+    text-align: left;
+}
+
+.projectList {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.projectCard {
+    margin: 1%;
+    background-color: #1C658C !important;
+    color: white;
+    border-radius: 25px !important;
+    padding: 10px 10px 0 10px;
+    display: flex !important;
+    flex-direction: column !important;
+    width: 30%;
+    transition: 1s;
+}
+
+.projectCard:hover {
+    background-color: #398AB9 !important;
+    transition: 0.25s;
+}
+
+.cardPicture {
+    border-radius: 20px !important;
+}
+
+.expandSeparator {
+    flex-grow: 1;
+}
+
+.technologyIcon {
+    margin: 0 2% 0 2%;
+    position: relative;
+    bottom: 3px;
+}
+
+.cardLink {
+    color: white !important;
+    text-decoration: none !important;
+}
+
+.knowledge {
+    width: 100%;
+    text-align: center;
+    margin: 25px;
+    color: #1C658C
+}
+
+.aboutMe {
+    line-height: 20px;
+    font-size: 16px;
+    vertical-align: middle;
+}
+
+.aboutMeIcon {
+    position: relative;
+    bottom: 3px;
+}
+
+.buttonsDiv {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 10px 20px 10px;
+}
+
+.linkButton {
+    font-size: 14px !important;
+}
+
+.linkButton:hover {
+    background-color: whitesmoke !important;
+    color: black !important;
+}
+
+@media (min-width: 500px) {
+    .App {
+        display: flex;
+        justify-content: center;
+        margin: 25px;
+    }
+}
+
+@media (max-width: 500px) {
+    .App {
+        display: flex;
+        justify-content: center;
+        margin: 0px;
+    }
+
+    .area {
+        margin: 10px 0 10px 0;
+        padding: 20px;
+    }
+
+    .projectList {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .projectCard {
+        margin-bottom: 25px;
+        width: 90%
+    }
+
+    .technologyIcon {
+        position: relative;
+        bottom: 1px;
+        right: 1px;
+    }
+
+    .knowledge {
+        line-height: 60px;
+        margin: 25px 0 25px 0;
+    }
+
+    .Sidebar {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hideOnMobile {
+        display: none;
+    }
+
+    .networkItem {
+        width: min-content !important;
+    }
+
+    .networksList {
+        flex-direction: row !important;
+        justify-content: space-between;
+        width: 85%;
+    }
+}
