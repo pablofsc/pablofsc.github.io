@@ -5,6 +5,9 @@ import TechnologiesList from './TechnologiesList';
 const MainContent = () => {
     return (
         <Col lg="9">
+            <div className='area mainContent topBar' style={{ marginTop: 0 }}>
+                Hello World
+            </div>
             <div className='area mainContent'>
                 <h1>
                     Bem vindo ao meu portfólio
@@ -29,12 +32,10 @@ const MainContent = () => {
                         'github',
                         'c']} size={40} />
                 </div>
-
-                Atualmente estou estudando React, já que quero seguir carreira como desenvolvedor web.
-                <br />
                 Este portfolio foi feito com React e Bootstrap.
-                <br />
-                <br />
+            </div>
+
+            <div className='area mainContent'>
                 <h2>Meus projetos</h2>
                 <p>Tenho feito alguns projetos pequenos para estudar e conhecer tecnologias em que tenho interesse. Estes são os principais:</p>
                 <ProjectList />

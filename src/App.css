@@ -11,10 +11,6 @@
     --hoverbbg: #398AB9;
 }
 
-html {
-    font-family: 'Nunito', sans-serif;
-}
-
 body {
     background-color: var(--a) !important;
     animation: fadeInAnimation ease 1.5s;
@@ -33,49 +29,58 @@ body {
 .area {
     background-color: var(--b);
     color: var(--letters);
+
     border-radius: 25px;
     box-sizing: border-box;
     width: 100%;
-    margin: 10px;
-    padding: 40px 10px 40px 10px;
+    margin: 20px 10px 10px 10px;
     font-family: 'Nunito',
         sans-serif;
-}
-
-.photo {
-    max-width: 75%;
-    border-radius: 20px;
-    display: block;
-    margin-bottom: 25px;
-}
-
-.networksList {
-    width: 75%;
-}
-
-.networkItem {
-    border-radius: 15px !important;
-    margin: 5px 0 5px 0 !important;
-    background-color: var(--buttonbg) !important;
-    color: var(--letters) !important;
-    border: none !important;
-    transition: 1s;
-}
-
-.networkItem:hover {
-    background-color: var(--hoverbbg) !important;
-    transition: 0.25s;
 }
 
 .Sidebar {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 20px;
 }
 
 .mainContent {
-    padding: 40px;
     text-align: left;
+    padding: 30px;
+}
+
+.topBar {
+    text-align: center;
+}
+
+.photo {
+    max-width: 80%;
+    border-radius: 20px;
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+.networksList {
+    width: 90%;
+}
+
+.shouldHighlight {
+    background-color: var(--buttonbg) !important;
+    color: var(--letters) !important;
+}
+
+.shouldHighlight:hover {
+    background-color: var(--hoverbbg) !important;
+    transition: 0.25s;
+}
+
+.networkItem {
+    border-radius: 12px !important;
+    margin: 5px 0 5px 0 !important;
+    border: none !important;
+    transition: 1s;
 }
 
 .projectList {
@@ -85,24 +90,35 @@ body {
 }
 
 .projectCard {
-    margin: 1%;
-    background-color: var(--buttonbg) !important;
-    color: var(--letters) !important;
-    border-radius: 25px !important;
+    margin: 10px;
+    border-radius: 20px !important;
     padding: 10px 10px 0 10px;
     display: flex !important;
     flex-direction: column !important;
-    width: 30%;
+    width: 33%;
     transition: 1s;
 }
 
-.projectCard:hover {
-    background-color: var(--hoverbbg) !important;
-    transition: 0.25s;
+.imageWrapper {
+    overflow: hidden;
+    border-radius: 15px !important;
 }
 
 .cardPicture {
-    border-radius: 20px !important;
+    border-radius: 15px !important;
+    transition: 1s;
+}
+
+.cardPicture:hover {
+    transform: scale(1.25);
+    border-radius: 15px !important;
+    transition: 0.25s;
+}
+
+.cardLink {
+    color: var(--letters) !important;
+    text-decoration: none !important;
+    cursor: pointer;
 }
 
 .expandSeparator {
@@ -115,16 +131,11 @@ body {
     bottom: 3px;
 }
 
-.cardLink {
-    color: var(--letters) !important;
-    text-decoration: none !important;
-}
-
 .knowledge {
+    color: var(--letters);
     width: 100%;
     text-align: center;
     margin: 25px;
-    color: var(--letters);
 }
 
 .aboutMe {
@@ -136,12 +147,7 @@ body {
 .aboutMeIcon {
     position: relative;
     bottom: 3px;
-}
-
-.buttonsDiv {
-    display: flex;
-    justify-content: space-around;
-    padding: 0 10px 20px 10px;
+    right: 5px;
 }
 
 .linkButton {
@@ -165,11 +171,11 @@ body {
     .App {
         display: flex;
         justify-content: center;
-        margin: 0px;
+        margin: 15px 5px 5px 5px;
     }
 
     .area {
-        margin: 10px 0 10px 0;
+        margin: 20px 0;
         padding: 20px;
     }
 
@@ -204,12 +210,12 @@ body {
     }
 
     .networkItem {
-        width: min-content !important;
+        width: fit-content !important;
     }
 
     .networksList {
         flex-direction: row !important;
-        justify-content: space-between;
+        justify-content: space-around;
         width: 85%;
     }
 }

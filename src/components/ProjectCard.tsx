@@ -14,9 +14,11 @@ interface ProjectCardProps {
 
 const ProjectCard = (props: ProjectCardProps) => {
     return (
-        <Card className="projectCard">
+        <Card className="projectCard shouldHighlight">
             <a className='cardLink' href={props.link}>
-                <Card.Img className="cardPicture" src={props.imgsrc} />
+                <div className='imageWrapper'>
+                    <Card.Img className="cardPicture" src={props.imgsrc} />
+                </div>
                 <Card.Body>
                     <Card.Title>{props.title}</Card.Title>
                     <Card.Text>
