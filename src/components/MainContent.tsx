@@ -1,13 +1,19 @@
-import { Col, Card } from 'react-bootstrap';
+import { Col, Row } from 'react-bootstrap';
 import ProjectList from './ProjectList';
 import TechnologiesList from './TechnologiesList';
+import Weather from './Weather'
+import DarkMode from './DarkMode'
+import CurrencyPrices from './CurrencyPrices'
 
 const MainContent = () => {
     return (
         <Col lg="9">
-            <div className='area mainContent topBar' style={{ marginTop: 0 }}>
-                Hello World
+            <div className='area topBar' style={{ marginTop: 0 }}>
+                <Weather />
+                <CurrencyPrices />
+                <DarkMode />
             </div>
+
             <div className='area mainContent'>
                 <h1>
                     Bem vindo ao meu portfólio
@@ -37,7 +43,7 @@ const MainContent = () => {
 
             <div className='area mainContent'>
                 <h2>Meus projetos</h2>
-                <p>Tenho feito alguns projetos pequenos para estudar e conhecer tecnologias em que tenho interesse. Estes são os principais:</p>
+                <p>Tenho feito alguns projetos pequenos para estudar e conhecer tecnologias que me interessam. Estes são os mais legais:</p>
                 <ProjectList />
             </div>
         </Col >

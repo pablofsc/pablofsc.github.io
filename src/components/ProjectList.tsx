@@ -12,7 +12,7 @@ const ProjectList = () => {
                 description="Com IA para jogar contra. Meu primeiro projeto Web."
                 imgsrc={ttt}
                 btn="Jogar"
-                link="https://pablofsc.github.io/tic-tac-toe"
+                link="https://pablofsc.me/tic-tac-toe"
                 technologies={['html', 'css', 'js']}
             />
             <ProjectCard
@@ -21,7 +21,7 @@ const ProjectList = () => {
                 description="Implementação do Conway's Game of Life para navegador."
                 imgsrc={conway}
                 btn="Abrir"
-                link="https://pablofsc.github.io/conway"
+                link="https://pablofsc.me/conway"
                 technologies={['html', 'css', 'js', 'bootstrap', 'jquery']}
             />
             <ProjectCard

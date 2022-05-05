@@ -36,6 +36,8 @@ body {
     margin: 20px 10px 10px 10px;
     font-family: 'Nunito',
         sans-serif;
+
+    box-shadow: black 0px 0px 20px;
 }
 
 .Sidebar {
@@ -51,7 +53,41 @@ body {
 }
 
 .topBar {
-    text-align: center;
+    padding: 5px 30px;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    height: 70px;
+}
+
+.topBarItem {
+    background-color: var(--b);
+    color: var(--letters);
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.darkModeSwitch {
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.weatherDetails {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 16px;
+}
+
+.currencyPrices {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
 }
 
 .photo {
@@ -60,6 +96,8 @@ body {
     display: block;
     margin-top: 20px;
     margin-bottom: 25px;
+
+    box-shadow: black 0px 0px 20px;
 }
 
 .networksList {
@@ -69,11 +107,13 @@ body {
 .shouldHighlight {
     background-color: var(--buttonbg) !important;
     color: var(--letters) !important;
+    box-shadow: black 0px 0px 8px;
 }
 
 .shouldHighlight:hover {
-    background-color: var(--hoverbbg) !important;
+    background-color: var(--buttonbg) !important;
     transition: 0.25s;
+    box-shadow: black 0px 0px 0px;
 }
 
 .networkItem {
@@ -218,4 +258,58 @@ body {
         justify-content: space-around;
         width: 85%;
     }
+}
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+.slider.round {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #BBBFCA;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 34px;
+    box-shadow: black 0px 0px 12px;
+}
+
+.slider.round:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: #F4F4F2;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 50%;
+    box-shadow: black 0px 1px 4px;
+}
+
+input:checked+.slider {
+    background-color: #476D7C;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
 }
