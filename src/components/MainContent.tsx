@@ -8,13 +8,13 @@ import CurrencyPrices from './CurrencyPrices'
 const MainContent = () => {
     return (
         <Col lg="9">
-            <div className='area topBar' style={{ marginTop: 0 }}>
+            <div className='transparentArea topBar' style={{ marginTop: 0 }}>
                 <Weather />
                 <CurrencyPrices />
                 <DarkMode />
             </div>
 
-            <div className='area mainContent'>
+            <div className='transparentArea mainContent'>
                 <h1>
                     Bem vindo ao meu portfólio
                 </h1>
@@ -41,7 +41,7 @@ const MainContent = () => {
                 Este portfolio foi feito com React e Bootstrap.
             </div>
 
-            <div className='area mainContent'>
+            <div className='transparentArea mainContent'>
                 <h2>Meus projetos</h2>
                 <p>Tenho feito alguns projetos pequenos para estudar e conhecer tecnologias que me interessam. Estes são os mais legais:</p>
                 <ProjectList />

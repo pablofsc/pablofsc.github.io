@@ -14,6 +14,8 @@
 body {
     background-color: var(--a) !important;
     animation: fadeInAnimation ease 1.5s;
+
+    transition: 1s;
 }
 
 @keyframes fadeInAnimation {
@@ -38,6 +40,20 @@ body {
         sans-serif;
 
     box-shadow: black 0px 0px 20px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    transition: 1s;
+}
+
+.transparentArea {
+    color: var(--letters);
+
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0 10px 0 10px;
+    font-family: 'Nunito',
+        sans-serif;
+
+    transition: 1s;
 }
 
 .Sidebar {
@@ -49,13 +65,11 @@ body {
 
 .mainContent {
     text-align: left;
-    padding: 30px;
+    padding: 30px 30px 10px 30px;
 }
 
 .topBar {
-    padding: 5px 30px;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: space-between;
     display: flex;
     flex-direction: row;
     height: 70px;
@@ -64,10 +78,21 @@ body {
 .topBarItem {
     background-color: var(--b);
     color: var(--letters);
+
+    padding: 0px 20px;
+    border-radius: 25px;
+    box-sizing: border-box;
+    font-family: 'Nunito',
+        sans-serif;
+
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
     text-align: left;
     display: flex;
     flex-direction: row;
     align-items: center;
+
+    transition: 1s;
 }
 
 .darkModeSwitch {
@@ -85,9 +110,10 @@ body {
 }
 
 .currencyPrices {
+    margin: 0 20px;
     display: flex;
     flex-grow: 1;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 .photo {
@@ -106,13 +132,14 @@ body {
 
 .shouldHighlight {
     background-color: var(--buttonbg) !important;
-    color: var(--letters) !important;
-    box-shadow: black 0px 0px 8px;
+    color: white !important;
+    transition: 0.15s !important;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
 .shouldHighlight:hover {
     background-color: var(--buttonbg) !important;
-    transition: 0.25s;
+    transition: 0.15s;
     box-shadow: black 0px 0px 0px;
 }
 
@@ -156,7 +183,7 @@ body {
 }
 
 .cardLink {
-    color: var(--letters) !important;
+    color: white !important;
     text-decoration: none !important;
     cursor: pointer;
 }
@@ -172,7 +199,6 @@ body {
 }
 
 .knowledge {
-    color: var(--letters);
     width: 100%;
     text-align: center;
     margin: 25px;
@@ -287,7 +313,6 @@ body {
     -webkit-transition: .4s;
     transition: .4s;
     border-radius: 34px;
-    box-shadow: black 0px 0px 12px;
 }
 
 .slider.round:before {
@@ -301,7 +326,6 @@ body {
     -webkit-transition: .4s;
     transition: .4s;
     border-radius: 50%;
-    box-shadow: black 0px 1px 4px;
 }
 
 input:checked+.slider {
