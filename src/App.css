@@ -284,6 +284,58 @@ body {
         justify-content: space-around;
         width: 85%;
     }
+
+    .topBar {
+        justify-content: space-between;
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+        margin: 0;
+    }
+
+    .topBarItem {
+        background-color: var(--b);
+        color: var(--letters);
+
+        padding: 0px 20px;
+        border-radius: 25px;
+        box-sizing: border-box;
+        font-family: 'Nunito',
+            sans-serif;
+
+        box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
+        text-align: left;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        transition: 1s;
+
+        margin: 0 0 20px 0;
+    }
+
+    .darkModeSwitch {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 75px;
+    }
+
+    .weatherDetails {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 16px;
+    }
+
+    .currencyPrices {
+        display: flex;
+        flex-grow: 1;
+        justify-content: space-around;
+        padding: 10px 0 10px 0;
+    }
 }
 
 /* The switch - the box around the slider */
