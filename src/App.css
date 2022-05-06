@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
 
 :root {
-    --a: #1B262C;
-    --b: #0F4C75;
-    --c: #3282B8;
-    --d: #BBE1FA;
-    --letters: white;
+    --a: #EEEEEE;
+    --b: #b7cadb;
+    --c: #398AB9;
+    --d: #1C658C;
+    --letters: black;
 
     --buttonbg: #1C658C;
     --hoverbbg: #398AB9;
@@ -361,7 +361,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #BBBFCA;
+    background-color: var(--c);
     -webkit-transition: .4s;
     transition: .4s;
     border-radius: 34px;
@@ -374,14 +374,14 @@ body {
     width: 26px;
     left: 4px;
     bottom: 4px;
-    background-color: #F4F4F2;
+    background-color: var(--a);
     -webkit-transition: .4s;
     transition: .4s;
     border-radius: 50%;
 }
 
 input:checked+.slider {
-    background-color: #476D7C;
+    background-color: var(--d);
 }
 
 input:checked+.slider:before {
