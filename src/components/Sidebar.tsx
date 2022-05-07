@@ -6,15 +6,15 @@ import profilePicture from '/src/imgs/me.jpg'
 const Sidebar = () => {
     return (
         <Col lg='3'>
-            <div className='area Sidebar' style={{ marginTop: 0 }}>
+            <div className='sidebarItem hasDefaultBackground fades tridimensional' style={{ padding: 0 }}>
                 <Image className='photo' src={profilePicture}></Image>
                 <h5>Pablo Felipe Santos Carneiro</h5>
-                <p><code><b>pablofsc</b></code></p>
+                <p><code>pablofsc</code></p>
 
                 <AboutMe />
             </div>
 
-            <div className='area Sidebar'>
+            <div className='sidebarItem hasDefaultBackground fades tridimensional'>
                 <ListGroup className='networksList'>
                     <SocialNetworkAnchor description='LinkedIn' website='https://www.linkedin.com/in/pablofsc' icon='linkedin' />
                     <SocialNetworkAnchor description='GitHub' website='https://github.com/pablofsc' icon='github' />

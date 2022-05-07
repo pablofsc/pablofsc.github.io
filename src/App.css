@@ -1,5 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
 
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+* {
+    font-family: 'Nunito', sans-serif;
+}
+
 :root {
     --a: #EEEEEE;
     --b: #b7cadb;
@@ -14,85 +28,48 @@
 body {
     background-color: var(--a) !important;
     animation: fadeInAnimation ease 1.5s;
-
     transition: 1s;
 }
 
-@keyframes fadeInAnimation {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-.area {
+.hasDefaultBackground {
     background-color: var(--b);
     color: var(--letters);
+}
 
-    border-radius: 25px;
-    box-sizing: border-box;
-    width: 100%;
-    margin: 20px 10px 10px 10px;
-    font-family: 'Nunito',
-        sans-serif;
-
-    box-shadow: black 0px 0px 20px;
+.tridimensional {
+    border-radius: 20px;
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.fades {
     transition: 1s;
 }
 
-.transparentArea {
+.textArea {
     color: var(--letters);
-
-    box-sizing: border-box;
-    width: 100%;
-    margin: 0 10px 0 10px;
-    font-family: 'Nunito',
-        sans-serif;
-
-    transition: 1s;
+    margin: 20px 10px;
 }
 
-.Sidebar {
+.sidebarItem {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 20px;
-}
-
-.mainContent {
-    text-align: left;
-    padding: 30px 30px 10px 30px;
+    margin: 0 10px 20px 10px;
 }
 
 .topBar {
-    justify-content: space-between;
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
     height: 70px;
 }
 
 .topBarItem {
-    background-color: var(--b);
-    color: var(--letters);
-
     padding: 0px 20px;
-    border-radius: 25px;
-    box-sizing: border-box;
-    font-family: 'Nunito',
-        sans-serif;
-
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-
-    text-align: left;
+    margin: 0 10px;
     display: flex;
-    flex-direction: row;
     align-items: center;
-
-    transition: 1s;
 }
 
 .darkModeSwitch {
@@ -102,43 +79,29 @@ body {
     align-items: center;
 }
 
-.weatherDetails {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    font-size: 16px;
-}
-
 .currencyPrices {
-    margin: 0 20px;
     display: flex;
     flex-grow: 1;
     justify-content: space-around;
 }
 
 .photo {
-    max-width: 80%;
-    border-radius: 20px;
-    display: block;
-    margin-top: 20px;
-    margin-bottom: 25px;
-
-    box-shadow: black 0px 0px 20px;
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+    margin: 0 0 20px 0;
 }
 
 .networksList {
     width: 90%;
 }
 
-.shouldHighlight {
+.clickable {
     background-color: var(--buttonbg) !important;
     color: white !important;
-    transition: 0.15s !important;
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    transition: 0.15s;
 }
 
-.shouldHighlight:hover {
-    background-color: var(--buttonbg) !important;
+.clickable:hover {
     transition: 0.15s;
     box-shadow: black 0px 0px 0px;
 }
@@ -147,39 +110,35 @@ body {
     border-radius: 12px !important;
     margin: 5px 0 5px 0 !important;
     border: none !important;
-    transition: 1s;
 }
 
 .projectList {
     display: flex;
-    flex-direction: row;
     justify-content: center;
 }
 
 .projectCard {
     margin: 10px;
+    border: 0 !important;
     border-radius: 20px !important;
-    padding: 10px 10px 0 10px;
     display: flex !important;
     flex-direction: column !important;
     width: 33%;
-    transition: 1s;
 }
 
 .imageWrapper {
     overflow: hidden;
-    border-radius: 15px !important;
+    border-radius: 19px 19px 0 0 !important;
 }
 
 .cardPicture {
-    border-radius: 15px !important;
     transition: 1s;
+    border-radius: 0 !important;
 }
 
 .cardPicture:hover {
-    transform: scale(1.25);
-    border-radius: 15px !important;
     transition: 0.25s;
+    transform: scale(1.50);
 }
 
 .cardLink {
@@ -195,19 +154,17 @@ body {
 .technologyIcon {
     margin: 0 2% 0 2%;
     position: relative;
-    bottom: 3px;
+    bottom: 2px;
 }
 
 .knowledge {
     width: 100%;
     text-align: center;
-    margin: 25px;
+    margin: 25px 0;
 }
 
 .aboutMe {
-    line-height: 20px;
-    font-size: 16px;
-    vertical-align: middle;
+    line-height: 22px;
 }
 
 .aboutMeIcon {
@@ -216,33 +173,20 @@ body {
     right: 5px;
 }
 
-.linkButton {
-    font-size: 14px !important;
-}
-
-.linkButton:hover {
-    background-color: whitesmoke !important;
-    color: black !important;
-}
-
 @media (min-width: 500px) {
     .App {
-        display: flex;
-        justify-content: center;
         margin: 25px;
     }
 }
 
 @media (max-width: 500px) {
     .App {
-        display: flex;
-        justify-content: center;
-        margin: 15px 5px 5px 5px;
+        margin: 15px;
     }
 
-    .area {
-        margin: 20px 0;
-        padding: 20px;
+    .sidebarItem {
+        margin-left: 0;
+        margin-right: 0;
     }
 
     .projectList {
@@ -252,23 +196,16 @@ body {
 
     .projectCard {
         margin-bottom: 25px;
-        width: 90%
+        width: 100%
     }
 
     .technologyIcon {
-        position: relative;
         bottom: 1px;
-        right: 1px;
     }
 
     .knowledge {
         line-height: 60px;
         margin: 25px 0 25px 0;
-    }
-
-    .Sidebar {
-        display: flex;
-        flex-direction: column;
     }
 
     .hideOnMobile {
@@ -282,59 +219,26 @@ body {
     .networksList {
         flex-direction: row !important;
         justify-content: space-around;
-        width: 85%;
     }
 
     .topBar {
-        justify-content: space-between;
         display: flex;
         flex-direction: column;
         height: fit-content;
-        margin: 0;
     }
 
     .topBarItem {
-        background-color: var(--b);
-        color: var(--letters);
-
-        padding: 0px 20px;
-        border-radius: 25px;
-        box-sizing: border-box;
-        font-family: 'Nunito',
-            sans-serif;
-
-        box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-
-        text-align: left;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
         justify-content: center;
-
-        transition: 1s;
-
         margin: 0 0 20px 0;
     }
 
     .darkModeSwitch {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
         height: 75px;
     }
 
-    .weatherDetails {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        font-size: 16px;
-    }
-
     .currencyPrices {
-        display: flex;
-        flex-grow: 1;
         justify-content: space-around;
-        padding: 10px 0 10px 0;
+        padding: 10px 0;
     }
 }
 
@@ -348,21 +252,14 @@ body {
 
 /* Hide default HTML checkbox */
 .switch input {
-    opacity: 0;
-    width: 0;
-    height: 0;
+    display: none;
 }
 
 /* The slider */
 .slider.round {
     position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    inset: 0;
     background-color: var(--c);
-    -webkit-transition: .4s;
     transition: .4s;
     border-radius: 34px;
 }
@@ -375,7 +272,6 @@ body {
     left: 4px;
     bottom: 4px;
     background-color: var(--a);
-    -webkit-transition: .4s;
     transition: .4s;
     border-radius: 50%;
 }
@@ -385,7 +281,5 @@ input:checked+.slider {
 }
 
 input:checked+.slider:before {
-    -webkit-transform: translateX(26px);
-    -ms-transform: translateX(26px);
     transform: translateX(26px);
 }

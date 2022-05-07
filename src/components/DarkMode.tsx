@@ -28,7 +28,7 @@ const DarkMode = () => {
     }
 
     return (
-        <div className="topBarItem">
+        <div className='topBarItem hasDefaultBackground fades tridimensional'>
             <div className="darkModeSwitch">
                 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" className="bi bi-sun"
                     viewBox="0 0 16 16">

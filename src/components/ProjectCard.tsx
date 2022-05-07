@@ -14,7 +14,7 @@ interface ProjectCardProps {
 
 const ProjectCard = (props: ProjectCardProps) => {
     return (
-        <Card className="projectCard shouldHighlight">
+        <Card className="projectCard clickable tridimensional">
             <a className='cardLink' href={props.link}>
                 <div className='imageWrapper'>
                     <Card.Img className="cardPicture" src={props.imgsrc} />

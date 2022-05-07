@@ -8,43 +8,45 @@ import CurrencyPrices from './CurrencyPrices'
 const MainContent = () => {
     return (
         <Col lg="9">
-            <div className='transparentArea topBar' style={{ marginTop: 0 }}>
+            <div className='topBar' style={{ marginTop: 0 }}>
                 <Weather />
                 <CurrencyPrices />
                 <DarkMode />
             </div>
 
-            <div className='transparentArea mainContent'>
-                <h1>
-                    Bem vindo ao meu portfólio
-                </h1>
+            <div style={{ margin: '30px' }}>
+                <div className='textArea fades'>
+                    <h2>
+                        Bem vindo ao meu portfólio
+                    </h2>
 
-                <p>
-                    Meu nome é Pablo, estou cursando o último ano de Engenharia de Computação no Centro Universitário de Brasília.
-                    <br />
-                    Busco adquirir experiência na área de <b>Desenvolvimento Web</b>, front e back.
-                </p>
+                    <p>
+                        Meu nome é Pablo, estou cursando o último ano de Engenharia de Computação no Centro Universitário de Brasília.
+                        <br />
+                        Busco adquirir experiência na área de <b>Desenvolvimento Web</b>, front e back.
+                    </p>
 
-                Estas são as tecnologias com que tenho alguma familiaridade:
+                    Estas são as tecnologias com que tenho alguma familiaridade:
 
-                <div className='knowledge'>
-                    <TechnologiesList list={[
-                        'html',
-                        'css',
-                        'js',
-                        'ts',
-                        'bootstrap',
-                        'react',
-                        'github',
-                        'c']} size={40} />
+                    <div className='knowledge'>
+                        <TechnologiesList list={[
+                            'html',
+                            'css',
+                            'js',
+                            'ts',
+                            'bootstrap',
+                            'react',
+                            'github',
+                            'c']} size={40} />
+                    </div>
+                    Este portfolio foi feito com React e Bootstrap.
                 </div>
-                Este portfolio foi feito com React e Bootstrap.
-            </div>
 
-            <div className='transparentArea mainContent'>
-                <h2>Meus projetos</h2>
-                <p>Tenho feito alguns projetos pequenos para estudar e conhecer tecnologias que me interessam. Estes são os mais legais:</p>
-                <ProjectList />
+                <div className='textArea fades'>
+                    <h2>Meus projetos</h2>
+                    <p>Tenho feito alguns projetos pequenos para estudar e conhecer tecnologias que me interessam. Estes são os mais legais:</p>
+                    <ProjectList />
+                </div>
             </div>
         </Col >
     )

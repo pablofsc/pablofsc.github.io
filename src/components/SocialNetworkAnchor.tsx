@@ -9,7 +9,7 @@ interface SocialNetworkAnchorProps {
 
 const SocialNetworkAnchor = (props: SocialNetworkAnchorProps) => {
     return (
-        <ListGroup.Item className='networkItem shouldHighlight' action href={props.website} target="_blank">
+        <ListGroup.Item className='networkItem clickable tridimensional' action href={props.website} target="_blank">
             {getIcon(props.icon, 20)}  <span className="hideOnMobile">{props.description}</span>
         </ListGroup.Item>
     )

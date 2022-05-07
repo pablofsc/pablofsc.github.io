@@ -25,12 +25,12 @@ function Weather() {
 
     if (forecast) {
         return (
-            <div className='topBarItem'>
+            <div className='topBarItem hasDefaultBackground fades tridimensional'>
                 <div style={{ fontSize: '24px' }}>
                     {forecast.temperature} °C
                 </div>
                 <img src={forecast.iconURL} style={{ margin: '0 10px' }} />
-                <div className='weatherDetails'>
+                <div>
                     {forecast.city}
                     <br />
                     {forecast.condition}
@@ -40,7 +40,7 @@ function Weather() {
     }
     else {
         return (
-            <div>
+            <div className='topBarItem hasDefaultBackground hasTransitionAnimation'>
                 error fetching weather forecast
             </div>
         )
