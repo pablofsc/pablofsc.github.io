@@ -6,21 +6,25 @@ interface ProjectCardProps {
     title: string,
     description?: string,
     imgsrc: string,
-    btn?: string,
     technologies: string[]
     link?: string,
-    id: string
 }
 
 const ProjectCard = (props: ProjectCardProps) => {
+    let cursorOnHover: string = 'pointer'
+
+    if (!props.link) {
+        cursorOnHover = 'not-allowed'
+    }
+
     return (
         <Card className="projectCard clickable tridimensional">
-            <a className='cardLink' href={props.link}>
+            <a className='cardLink' href={props.link} style={{ cursor: cursorOnHover }}>
                 <div className='imageWrapper'>
                     <Card.Img className="cardPicture" src={props.imgsrc} />
                 </div>
                 <Card.Body>
-                    <Card.Title>{props.title}</Card.Title>
+                    <Card.Title style={{ fontSize: '20px' }}>{props.title}</Card.Title>
                     <Card.Text>
                         {props.description}
                     </Card.Text>

@@ -26,7 +26,7 @@ function Weather() {
     if (forecast) {
         return (
             <div className='topBarItem hasDefaultBackground fades tridimensional'>
-                <div style={{ fontSize: '24px' }}>
+                <div className='currentTemp'>
                     {forecast.temperature} °C
                 </div>
                 <img src={forecast.iconURL} style={{ margin: '0 10px' }} />

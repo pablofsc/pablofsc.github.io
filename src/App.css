@@ -62,7 +62,7 @@ body {
 .topBar {
     display: flex;
     justify-content: space-between;
-    height: 70px;
+    height: fit-content;
 }
 
 .topBarItem {
@@ -70,6 +70,11 @@ body {
     margin: 0 10px;
     display: flex;
     align-items: center;
+    min-height: fit-content;
+}
+
+.currentTemp {
+    font-size: 24px;
 }
 
 .darkModeSwitch {
@@ -114,16 +119,18 @@ body {
 
 .projectList {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .projectCard {
-    margin: 10px;
+    margin: 10px 0;
     border: 0 !important;
     border-radius: 20px !important;
     display: flex !important;
     flex-direction: column !important;
-    width: 33%;
+    width: 32%;
+    font-size: 15px;
 }
 
 .imageWrapper {
@@ -164,6 +171,7 @@ body {
 }
 
 .aboutMe {
+    padding: 0 10px;
     line-height: 22px;
 }
 
@@ -179,14 +187,51 @@ body {
     }
 }
 
+@media (min-width: 500px) and (max-width: 1200px) {
+    .topBarItem {
+        font-size: 9px;
+    }
+
+    .currentTemp {
+        font-size: 20px;
+    }
+
+    .name {
+        font-size: 14px;
+    }
+
+    .aboutMe {
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+    .topBarItem {
+        font-size: 14px;
+    }
+
+    .name {
+        font-size: 18px;
+    }
+}
+
 @media (max-width: 500px) {
     .App {
         margin: 15px;
     }
 
+    .topBarItem {
+        font-size: 15px;
+    }
+
     .sidebarItem {
         margin-left: 0;
         margin-right: 0;
+    }
+
+    .photo {
+        height: 300px;
+        object-fit: cover;
     }
 
     .projectList {
@@ -239,6 +284,12 @@ body {
     .currencyPrices {
         justify-content: space-around;
         padding: 10px 0;
+    }
+}
+
+@media (max-width: 400px) {
+    .topBarItem {
+        font-size: 12px;
     }
 }
 
