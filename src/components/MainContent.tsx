@@ -14,7 +14,7 @@ const MainContent = () => {
                 <DarkMode />
             </div>
 
-            <div style={{ margin: '30px' }}>
+            <div>
                 <div className='textArea fades'>
                     <h2>
                         Bem vindo ao meu portfólio

@@ -47,7 +47,7 @@ body {
 
 .textArea {
     color: var(--letters);
-    margin: 20px 10px;
+    margin: 30px;
 }
 
 .sidebarItem {
@@ -284,6 +284,10 @@ body {
     .currencyPrices {
         justify-content: space-around;
         padding: 10px 0;
+    }
+
+    .textArea {
+        margin: 20px 5px;
     }
 }
 
