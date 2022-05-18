@@ -11,7 +11,9 @@ import {
     SiGithub,
     SiLinkedin,
     SiTelegram,
-    SiMaildotru
+    SiMaildotru,
+    SiHeroku,
+    SiExpress
 } from 'react-icons/si'
 
 const getIcon = (name: string, size: number) => {
@@ -29,7 +31,7 @@ const getIcon = (name: string, size: number) => {
         case 'bootstrap':
             return (<SiBootstrap size={size} className={className} title="Bootstrap" />)
         case 'react':
-            return (<SiReact size={size} className={className} title="React" />)
+            return (<SiReact size={size} className={className} title="React.js" />)
         case 'jquery':
             return (<SiJquery size={size} className={className} title="jQuery" />)
         case 'c':
@@ -38,6 +40,10 @@ const getIcon = (name: string, size: number) => {
             return (<SiGit size={size} className={className} title="Git" />)
         case 'github':
             return (<SiGithub size={size} className={className} title="GitHub" />)
+        case 'heroku':
+            return (<SiHeroku size={size} className={className} title="Heroku" />)
+        case 'express':
+            return (<SiExpress size={size} className={className} title="Express.js" />)
 
         case 'linkedin':
             return (<SiLinkedin size={size} className={className} />)

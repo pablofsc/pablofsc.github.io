@@ -23,10 +23,10 @@ const ProjectList = () => {
             />
             <ProjectCard
                 title="Busca Reversa por Imagem"
-                description='Busca reversa nos principais buscadores.'
+                description='Busca reversa por imagem nos principais buscadores.'
                 imgsrc={reverse}
                 link="https://pablofsc.me/reverse-image-search"
-                technologies={['react', 'css', 'ts']}
+                technologies={['react', 'css', 'ts', 'heroku', 'express', 'js']}
             />
             <ProjectCard
                 title="Esta página :)"

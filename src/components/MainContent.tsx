@@ -36,8 +36,10 @@ const MainContent = () => {
                             'ts',
                             'bootstrap',
                             'react',
-                            'github',
-                            'c']} size={40} />
+                            'express',
+                            'heroku',
+                            'github'
+                        ]} size={40} />
                     </div>
                     Este portfolio foi feito com React e Bootstrap.
                 </div>
