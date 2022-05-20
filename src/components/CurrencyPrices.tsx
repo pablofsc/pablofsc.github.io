@@ -38,7 +38,7 @@ const CurrencyPrices = () => {
     }, [])
 
     return (
-        <div className='currencyPrices topBarItem hasDefaultBackground fades tridimensional'>
+        <div className='topBarItem currencyPrices hasDefaultBackground fades tridimensional'>
             <div>
                 <div>
                     <b>$</b> 1 = <b>R$</b> {brl.toFixed(2)}
