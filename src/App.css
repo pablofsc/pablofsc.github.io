@@ -15,14 +15,32 @@
 }
 
 :root {
-    --a: #1B262C;
-    --b: #0F4C75;
-    --c: #3282B8;
-    --d: #BBE1FA;
-    --letters: white;
+    --aDark: #222831;
+    --bDark: #30475E;
+    --cDark: #3282B8;
+    --dDark: #BBE1FA;
+    --lettersDark: white;
 
-    --buttonbg: #1C658C;
-    --hoverbbg: #398AB9;
+    --buttonbgDark: #1C658C;
+    --hoverbbgDark: #398AB9;
+
+    --aLight: #EEEEEE;
+    --bLight: #b7cadb;
+    --cLight: #398AB9;
+    --dLight: #1C658C;
+    --lettersLight: black;
+
+    --buttonbgLight: #1C658C;
+    --hoverbbgLight: #398AB9;
+
+    --a: var(--aDark);
+    --b: var(--bDark);
+    --c: var(--cDark);
+    --d: var(--dDark);
+    --letters: var(--lettersDark);
+
+    --buttonbg: var(--buttonbgDark);
+    --hoverbbg: var(--hoverbbgDark);
 }
 
 body {
@@ -31,20 +49,17 @@ body {
     transition: 1s;
 }
 
-h1 {
-    color: var(--letters);
-    text-align: center;
-    margin-bottom: 30px !important;
-}
-
 .hasDefaultBackground {
     background-color: var(--b);
     color: var(--letters);
 }
 
 .tridimensional {
-    border-radius: 20px;
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    border-radius: 10px;
+    box-shadow:
+        rgba(0, 0, 0, 0.4) 0px 2px 4px,
+        rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+        rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
 .fades {
@@ -65,11 +80,15 @@ h1 {
     margin: 0 10px 20px 10px;
 }
 
+code {
+    color: var(--d) !important;
+}
+
 .topBar {
     display: flex;
     justify-content: center;
     height: fit-content;
-    margin: 0 0 30px 0;
+    margin: 0 0 40px 0;
 }
 
 .topBarItem {
@@ -99,8 +118,8 @@ h1 {
 
 .photo {
     width: 100%;
-    border-radius: 20px 20px 0 0;
-    margin: 0 0 20px 0;
+    border-radius: 10px 10px 0 0;
+    margin: 0 0 10px 0;
 }
 
 .networksList {
@@ -119,30 +138,45 @@ h1 {
 }
 
 .networkItem {
-    border-radius: 12px !important;
+    border-radius: 6px !important;
     margin: 5px 0 5px 0 !important;
     border: none !important;
 }
 
-.projectList {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+.projectLink {
+    border-radius: 6px !important;
+    margin: 0 10px;
+    border: none !important;
 }
 
-.projectCard {
-    margin: 10px 0;
-    border: 0 !important;
-    border-radius: 20px !important;
-    display: flex !important;
-    flex-direction: column !important;
-    width: 32%;
-    font-size: 15px;
+.linkGroup {
+    margin: 0 0 0 auto;
+}
+
+.personalProject {
+    display: flex;
+    margin: 30px 0;
+}
+
+.personalProjectPicture {
+    height: 200px;
+    width: 300px;
+    border-radius: 10px;
+    object-fit: cover;
 }
 
 .imageWrapper {
-    overflow: hidden;
-    border-radius: 19px 19px 0 0 !important;
+    margin-right: 30px;
+}
+
+.personalProjectDetails {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.personalProjectBottomPart {
+    display: flex;
 }
 
 .cardPicture {
@@ -174,7 +208,7 @@ h1 {
 .knowledge {
     width: 100%;
     text-align: center;
-    margin: 25px 0;
+    margin: 30px 0;
 }
 
 .aboutMe {
@@ -188,9 +222,17 @@ h1 {
     right: 5px;
 }
 
+.filler {
+    flex-grow: 1;
+}
+
 @media (min-width: 500px) {
     .App {
         margin: 25px;
+    }
+
+    .showOnlyOnMobile {
+        display: none;
     }
 }
 
@@ -203,22 +245,15 @@ h1 {
         font-size: 20px;
     }
 
-    .name {
-        font-size: 14px;
-    }
-
     .aboutMe {
-        font-size: 12px;
+        margin: 15px 0;
+        font-size: 16px;
     }
 }
 
 @media (min-width: 1200px) and (max-width: 1400px) {
     .topBarItem {
         font-size: 14px;
-    }
-
-    .name {
-        font-size: 18px;
     }
 }
 
@@ -246,11 +281,6 @@ h1 {
         align-items: center;
     }
 
-    .projectCard {
-        margin-bottom: 25px;
-        width: 100%
-    }
-
     .technologyIcon {
         bottom: 1px;
     }
@@ -262,6 +292,10 @@ h1 {
 
     .hideOnMobile {
         display: none;
+    }
+
+    .showOnlyOnMobile {
+        display: block;
     }
 
     .networkItem {
@@ -277,6 +311,7 @@ h1 {
         display: flex;
         flex-direction: column;
         height: fit-content;
+        margin-bottom: 0;
     }
 
     .topBarItem {
@@ -296,6 +331,29 @@ h1 {
 
     .textArea {
         margin: 20px 5px;
+    }
+
+    .personalProject {
+        flex-direction: column;
+    }
+
+    .personalProjectPicture {
+        margin: 0;
+    }
+
+    .imageWrapper {
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    .personalProjectBottomPart {
+        flex-direction: column;
+        justify-items: center;
+    }
+
+    .linkGroup {
+        margin: 25px 0;
+        text-align: right;
     }
 }
 

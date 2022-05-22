@@ -6,37 +6,17 @@ const MainContent = () => {
     return (
         <Col lg="9">
             <div className='textArea fades'>
-                <h2>
-                    Bem vindo ao meu portfólio
-                </h2>
+                <h1>
+                    Pablo Felipe Santos Carneiro
+                </h1>
 
                 <p>
-                    Meu nome é Pablo, estou cursando o último ano de Engenharia de Computação no Centro Universitário de Brasília.
-                    <br />
-                    Busco adquirir experiência na área de <b>Desenvolvimento Web</b>, front e back.
+                    Graduando no último ano de <b>Engenharia de Computação</b> pelo <b>Centro Universitário de Brasília.</b>
                 </p>
-
-                Estas são as tecnologias com que tenho alguma familiaridade:
-
-                <div className='knowledge'>
-                    <TechnologiesList list={[
-                        'html',
-                        'css',
-                        'js',
-                        'ts',
-                        'bootstrap',
-                        'react',
-                        'express',
-                        'heroku',
-                        'github'
-                    ]} size={40} />
-                </div>
-                Este portfolio foi feito com React e Bootstrap.
             </div>
 
             <div className='textArea fades'>
-                <h2>Meus projetos</h2>
-                <p>Tenho feito alguns projetos pequenos para estudar e conhecer tecnologias que me interessam. Estes são os mais legais:</p>
+                <h2>Projetos</h2>
                 <ProjectList />
             </div>
         </Col >

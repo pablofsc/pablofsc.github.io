@@ -6,8 +6,21 @@ import { Container, Row } from 'react-bootstrap';
 import Sidebar from './components/Sidebar'
 import MainContent from './components/MainContent'
 import TopBar from './components/TopBar'
+import TechnologiesList from './components/TechnologiesList';
 
 function App() {
+    const knowledge = [
+        'html',
+        'css',
+        'js',
+        'ts',
+        'bootstrap',
+        'react',
+        'express',
+        'heroku',
+        'github'
+    ]
+
     return (
         <div className="App">
             <Container>
@@ -15,9 +28,13 @@ function App() {
                     <TopBar />
                 </Row>
                 <Row>
-                    <h1 className='fades'>
-                        pablofsc.me
-                    </h1>
+                    <div className='knowledge textArea fades hideOnMobile'>
+                        <TechnologiesList list={knowledge} size={40} />
+                    </div>
+
+                    <div className='knowledge textArea fades showOnlyOnMobile'>
+                        <TechnologiesList list={knowledge} size={30} />
+                    </div>
                 </Row>
                 <Row>
                     <Sidebar />

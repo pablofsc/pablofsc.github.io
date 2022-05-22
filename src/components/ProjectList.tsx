@@ -1,38 +1,34 @@
-import ProjectCard from './ProjectCard';
+import ProjectItem from './ProjectItem';
+
 import ttt from '/src/imgs/tic-tac-toe.png'
 import conway from '/src/imgs/conway.png'
-import portfolio from '/src/imgs/portfolio.png'
 import reverse from '/src/imgs/reverse.png'
 
 const ProjectList = () => {
     return (
-        <div className='projectList'>
-            <ProjectCard
-                title="Jogo da Velha"
-                description="Com IA para jogar contra. Meu primeiro projeto Web."
-                imgsrc={ttt}
-                link="https://pablofsc.me/tic-tac-toe"
-                technologies={['html', 'css', 'js']}
+        <div>
+            <ProjectItem
+                title="Agregador de Busca Reversa por Imagem"
+                description="Junta os principais motores de busca reversa em uma única página. Faz uso de uma API restless feita por mim, hospedada em um servidor Heroku. As imagens carregadas do computador ficam salvas neste servidor de forma temporária, para que os buscadores possam acessar a imagem através da internet."
+                imgsrc={reverse}
+                id="reverse-image-search"
+                technologies={['react', 'css', 'ts', 'heroku', 'express', 'js']}
+                backendID="image-store"
+                backendTitle="API"
             />
-            <ProjectCard
-                title="Conway's Game"
-                description="Implementação do Conway's Game of Life para navegador."
+            <ProjectItem
+                title="Conway's Game of Life"
+                description="Implementação do Jogo da Vida de Conway para navegador. Trata-se de um autômato celular, em que as células na matriz interagem obedecendo a um conjunto pequeno de regras, gerando comportamentos aparentemente ensaiados."
                 imgsrc={conway}
-                link="https://pablofsc.me/conway"
+                id="conway"
                 technologies={['html', 'css', 'js', 'bootstrap', 'jquery']}
             />
-            <ProjectCard
-                title="Busca Reversa por Imagem"
-                description='Busca reversa por imagem nos principais buscadores.'
-                imgsrc={reverse}
-                link="https://pablofsc.me/reverse-image-search"
-                technologies={['react', 'css', 'ts', 'heroku', 'express', 'js']}
-            />
-            <ProjectCard
-                title="Esta página :)"
-                description='Meu primeiro projeto em React e Typescript.'
-                imgsrc={portfolio}
-                technologies={['react', 'css', 'ts', 'bootstrap']}
+            <ProjectItem
+                title="Jogo da Velha"
+                description="Simples jogo da velha com IA para jogar contra o usuário. A IA, feita por mim, é puramente estatística e não é invencível. Este foi o meu primeiro projeto Web. Também desenvolvi uma versão em C, disponível no meu GitHub."
+                imgsrc={ttt}
+                id="tic-tac-toe"
+                technologies={['html', 'css', 'js']}
             />
         </div>
     )

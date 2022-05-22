@@ -5,18 +5,18 @@ const DarkMode = () => {
 
     const switchColorScheme = () => {
         if (inDarkMode) {
-            document.documentElement.style.setProperty('--a', '#EEEEEE')
-            document.documentElement.style.setProperty('--b', '#b7cadb')
-            document.documentElement.style.setProperty('--c', '#398AB9')
-            document.documentElement.style.setProperty('--d', '#1C658C')
-            document.documentElement.style.setProperty('--letters', 'black')
+            document.documentElement.style.setProperty('--a', 'var(--aLight)')
+            document.documentElement.style.setProperty('--b', 'var(--bLight)')
+            document.documentElement.style.setProperty('--c', 'var(--cLight)')
+            document.documentElement.style.setProperty('--d', 'var(--dLight)')
+            document.documentElement.style.setProperty('--letters', 'var(--lettersLight)')
         }
         else {
-            document.documentElement.style.setProperty('--a', '#1B262C')
-            document.documentElement.style.setProperty('--b', '#0F4C75')
-            document.documentElement.style.setProperty('--c', '#3282B8')
-            document.documentElement.style.setProperty('--d', '#BBE1FA')
-            document.documentElement.style.setProperty('--letters', 'white')
+            document.documentElement.style.setProperty('--a', 'var(--aDark)')
+            document.documentElement.style.setProperty('--b', 'var(--bDark)')
+            document.documentElement.style.setProperty('--c', 'var(--cDark)')
+            document.documentElement.style.setProperty('--d', 'var(--dDark)')
+            document.documentElement.style.setProperty('--letters', 'var(--lettersDark)')
         }
         setMode(!inDarkMode);
     }

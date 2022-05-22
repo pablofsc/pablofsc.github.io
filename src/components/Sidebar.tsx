@@ -7,10 +7,8 @@ const Sidebar = () => {
     return (
         <Col lg='3'>
             <div className='sidebarItem hasDefaultBackground fades tridimensional' style={{ padding: 0 }}>
-                <Image className='photo' src={profilePicture}></Image>
-                <h5 className='name'>Pablo Felipe Santos Carneiro</h5>
-                <p><code>pablofsc</code></p>
-
+                <Image className='photo' src={profilePicture} />
+                <h4><code className='fades'>pablofsc</code></h4>
                 <AboutMe />
             </div>
 
