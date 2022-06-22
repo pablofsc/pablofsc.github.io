@@ -1,31 +1,29 @@
-import TechnologiesList from './TechnologiesList';
-import ProjectLinks from './ProjectLinks'
-interface ProjectProperties {
-    title: string,
-    description: string,
-    imgsrc: string,
-    technologies: string[]
-    id: string,
+import { ReactElement } from 'react';
 
-    backendID?: string,
-    backendTitle?: string
+import TechnologiesList from './TechnologiesList';
+import ProjectLinks from './ProjectLinks';
+
+interface Properties {
+    title: string;
+    description: string;
+    imgsrc: string;
+    technologies: string[];
+    id: string;
+
+    backendID?: string;
+    backendTitle?: string;
 }
 
-const ProjectItem = (props: ProjectProperties) => {
+const ProjectItem = (props: Properties): ReactElement => {
     return (
         <div className='personalProject'>
             <a className='imageWrapper' href={props.id}>
-                <img
-                    className='personalProjectPicture tridimensional'
-                    src={props.imgsrc}
-                />
+                <img className='personalProjectPicture tridimensional' src={props.imgsrc} />
             </a>
             <div className='personalProjectDetails'>
                 <h3>{props.title}</h3>
-                <p>
-                    {props.description}
-                </p>
-                <div className='filler' />
+                <p>{props.description}</p>
+                <div className='expandSeparator' />
                 <div className='personalProjectBottomPart'>
                     <div style={{ minWidth: '300px' }}>
                         <TechnologiesList list={props.technologies} size={20} />
@@ -34,7 +32,7 @@ const ProjectItem = (props: ProjectProperties) => {
                 </div>
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default ProjectItem
+export default ProjectItem;

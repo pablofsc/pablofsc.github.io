@@ -1,14 +1,21 @@
+import '../styles/SideBar.css';
+
+import { ReactElement } from 'react';
 import { Col, ListGroup, Image } from 'react-bootstrap';
+
 import AboutMe from './AboutMe';
 import SocialNetworkAnchor from './SocialNetworkAnchor';
-import profilePicture from '/src/imgs/me.jpg'
+import profilePicture from '/src/imgs/me.jpg';
 
-const Sidebar = () => {
+const SideBar = (): ReactElement => {
     return (
         <Col lg='3'>
-            <div className='sidebarItem hasDefaultBackground fades tridimensional' style={{ padding: 0 }}>
-                <Image className='photo' src={profilePicture} />
-                <h4><code className='fades'>pablofsc</code></h4>
+            <Image className='sidebarItem photo hideOnMobile' src={profilePicture} />
+
+            <div className='sidebarItem hasDefaultBackground fades tridimensional aboutMeWrapper'>
+                <div>
+                    <Image className='sidebarItem photo showOnlyOnMobile' src={profilePicture} />
+                </div>
                 <AboutMe />
             </div>
 
@@ -21,7 +28,7 @@ const Sidebar = () => {
                 </ListGroup>
             </div>
         </Col>
-    )
-}
+    );
+};
 
-export default Sidebar
+export default SideBar;

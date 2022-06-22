@@ -1,0 +1,10 @@
+.textArea {
+    color: var(--letters);
+    margin: 0 30px 30px 30px;
+}
+
+@media (max-width: 500px) { 
+    .textArea {
+        margin: 20px 5px;
+    }
+}

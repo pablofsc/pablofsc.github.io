@@ -1,0 +1,74 @@
+.topBar {
+    display: flex;
+    justify-content: center;
+    height: fit-content;
+    margin: 0 0 40px 0;
+}
+
+.topBarItem {
+    padding: 0px 20px;
+    margin: 0 10px;
+    display: flex;
+    align-items: center;
+    min-height: fit-content;
+}
+
+.currentTemp {
+    font-size: 24px;
+}
+
+.darkModeSwitch {
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.currencyPrices {
+    display: flex;
+    justify-content: space-around;
+    width: 35%;
+}
+
+@media (max-width: 500px) { 
+    .topBar {
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+        margin-bottom: 0;
+    }
+    
+    .topBarItem {
+        justify-content: center;
+        margin: 0 0 20px 0;
+        font-size: 15px;
+    }
+    
+    .darkModeSwitch {
+        height: 75px;
+    }
+    
+    .currencyPrices {
+        justify-content: space-around;
+        padding: 10px 0;
+        width: 100%;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 1200px) {
+    .currentTemp {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+    .topBarItem {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 400px) {
+    .topBarItem {
+        font-size: 12px;
+    }
+}

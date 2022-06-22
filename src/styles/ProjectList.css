@@ -1,0 +1,92 @@
+.projectLink {
+    border-radius: 6px !important;
+    margin: 0 10px;
+    border: none !important;
+}
+
+.personalProject {
+    display: flex;
+    margin: 30px 0;
+}
+
+.personalProjectPicture {
+    height: 200px;
+    width: 300px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.imageWrapper {
+    margin-right: 30px;
+}
+
+.personalProjectDetails {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.personalProjectBottomPart {
+    display: flex;
+}
+
+.cardPicture {
+    transition: 1s;
+    border-radius: 0 !important;
+}
+
+.cardPicture:hover {
+    transition: 0.25s;
+    transform: scale(1.50);
+}
+
+.cardLink {
+    color: white !important;
+    text-decoration: none !important;
+    cursor: pointer;
+}
+
+.linkGroup {
+    margin: 0 0 0 auto;
+}
+
+.technologyIcon {
+    margin: 0 2% 0 2%;
+    position: relative;
+    bottom: 2px;
+}
+
+@media (max-width: 500px) {
+    .projectList {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .technologyIcon {
+        bottom: 1px;
+    }
+
+    .personalProject {
+        flex-direction: column;
+    }
+    
+    .personalProjectPicture {
+        margin: 0;
+    }
+    
+    .imageWrapper {
+        text-align: center;
+        padding-bottom: 20px;
+        margin: 0;
+    }
+    
+    .personalProjectBottomPart {
+        flex-direction: column;
+        justify-items: center;
+    }
+    
+    .linkGroup {
+        margin: 25px 0;
+        text-align: right;
+    }
+}

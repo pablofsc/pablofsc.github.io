@@ -1,16 +1,14 @@
-import getIcon from './GetIcon'
+import { ReactElement } from 'react';
 
-interface TechnologiesListProps {
-    list: string[],
-    size: number
+import getIcon from './GetIcon';
+
+interface Properties {
+    list: string[];
+    size: number;
 }
 
-const TechnologiesList = (props: TechnologiesListProps) => {
-    return (
-        <>
-            {props.list.map((item) => getIcon(item, props.size))}
-        </>
-    )
-}
+const TechnologiesList = (props: Properties): ReactElement => {
+    return <>{props.list.map((item) => getIcon(item, props.size))}</>;
+};
 
-export default TechnologiesList
+export default TechnologiesList;
