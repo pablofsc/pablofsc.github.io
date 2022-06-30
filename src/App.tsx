@@ -6,7 +6,7 @@ import { Container, Row } from 'react-bootstrap';
 
 import TopBar from './components/TopBar';
 import MainContent from './components/MainContent';
-import SideBar from './components/SideBar';
+import SideBar from './components/Sidebar';
 
 const App = (): ReactElement => {
     return (

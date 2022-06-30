@@ -6,10 +6,20 @@ import ProjectItem from './ProjectItem';
 import ttt from '/src/imgs/tic-tac-toe.png';
 import conway from '/src/imgs/conway.png';
 import reverse from '/src/imgs/reverse.png';
+import inventory from '/src/imgs/inventory.png';
 
 const ProjectList = (): ReactElement => {
     return (
         <div>
+            <ProjectItem
+                title='Sistema de Controle de Estoque'
+                description='Simples sistema de controle de inventário conectado a um banco de dados PostgreSQL no Heroku. Possui sistema de cadastro de clientes e produtos, com funções de criação, edição e remoção de cadastros.'
+                imgsrc={inventory}
+                id='inventory-manager'
+                technologies={['react', 'ts', 'mui', 'heroku', 'express', 'postgres']}
+                backendID='inventory-db-node'
+                backendTitle='API'
+            />
             <ProjectItem
                 title='Agregador de Busca Reversa por Imagem'
                 description='Junta os principais motores de busca reversa em uma única página. Faz uso de uma API restless feita por mim, hospedada em um servidor Heroku. As imagens carregadas do computador ficam salvas neste servidor de forma temporária, para que os buscadores possam acessar a imagem através da internet.'
@@ -24,7 +34,7 @@ const ProjectList = (): ReactElement => {
                 description='Implementação do Jogo da Vida de Conway para navegador. Trata-se de um autômato celular, em que as células na matriz interagem obedecendo a um conjunto pequeno de regras, gerando comportamentos aparentemente ensaiados.'
                 imgsrc={conway}
                 id='conway'
-                technologies={['html', 'css', 'js', 'bootstrap', 'jquery']}
+                technologies={['html', 'bootstrap', 'js', 'jquery']}
             />
             <ProjectItem
                 title='Jogo da Velha'
