@@ -7,10 +7,20 @@ import ttt from '/src/imgs/tic-tac-toe.png';
 import conway from '/src/imgs/conway.png';
 import reverse from '/src/imgs/reverse.png';
 import inventory from '/src/imgs/inventory.png';
+import ans from '/src/imgs/ans.png';
 
 const ProjectList = (): ReactElement => {
     return (
         <div>
+            <ProjectItem
+                title='Lista de Operadoras ANS'
+                description='Lista as operadoras de planos de saúdes brasileiras, com informações da Agência Nacional de Saúde Suplementar. Os dados ficam armazenados em um banco PostgreSQL hospedado no Heroku.'
+                imgsrc={ans}
+                id='interface-ic'
+                technologies={['vue', 'js', 'bootstrap', 'heroku', 'express', 'postgres']}
+                backendID='interface-ic-database'
+                backendTitle='API'
+            />
             <ProjectItem
                 title='Sistema de Controle de Estoque'
                 description='Simples sistema de controle de inventário conectado a um banco de dados PostgreSQL no Heroku. Possui sistema de cadastro de clientes e produtos, com funções de criação, edição e remoção de cadastros.'
