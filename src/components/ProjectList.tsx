@@ -16,9 +16,9 @@ const ProjectList = (): ReactElement => {
                 title='Lista de Operadoras ANS'
                 description='Lista as operadoras de planos de saúdes brasileiras, com informações da Agência Nacional de Saúde Suplementar. Os dados ficam armazenados em um banco PostgreSQL hospedado no Heroku.'
                 imgsrc={ans}
-                id='interface-ic'
+                id='operadoras-ans'
                 technologies={['vue', 'js', 'bootstrap', 'heroku', 'express', 'postgres']}
-                backendID='interface-ic-database'
+                backendID='operadoras-ans-db'
                 backendTitle='API'
             />
             <ProjectItem
