@@ -17,7 +17,7 @@ const ProjectList = (): ReactElement => {
                 description='Lista as operadoras de planos de saúdes brasileiras, com informações da Agência Nacional de Saúde Suplementar. Os dados ficam armazenados em um banco PostgreSQL hospedado no Heroku.'
                 imgsrc={ans}
                 id='operadoras-ans'
-                technologies={['vue', 'js', 'bootstrap', 'heroku', 'express', 'postgres']}
+                technologies={['vue', 'bootstrap', 'js', 'heroku', 'node', 'postgres']}
                 backendID='operadoras-ans-db'
                 backendTitle='API'
             />
@@ -26,7 +26,7 @@ const ProjectList = (): ReactElement => {
                 description='Simples sistema de controle de inventário conectado a um banco de dados PostgreSQL no Heroku. Possui sistema de cadastro de clientes e produtos, com funções de criação, edição e remoção de cadastros.'
                 imgsrc={inventory}
                 id='inventory-manager'
-                technologies={['react', 'ts', 'mui', 'heroku', 'express', 'postgres']}
+                technologies={['react', 'mui', 'ts', 'heroku', 'node', 'postgres']}
                 backendID='inventory-db-node'
                 backendTitle='API'
             />
@@ -35,7 +35,7 @@ const ProjectList = (): ReactElement => {
                 description='Junta os principais motores de busca reversa em uma única página. Faz uso de uma API restless feita por mim, hospedada em um servidor Heroku. As imagens carregadas do computador ficam salvas neste servidor de forma temporária, para que os buscadores possam acessar a imagem através da internet.'
                 imgsrc={reverse}
                 id='reverse-image-search'
-                technologies={['react', 'css', 'ts', 'heroku', 'express', 'js']}
+                technologies={['react', 'css', 'ts', 'heroku', 'node']}
                 backendID='image-store'
                 backendTitle='API'
             />

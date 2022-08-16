@@ -18,7 +18,7 @@ const MainContent = (): ReactElement => {
             </div>
 
             <div className='textArea fades'>
-                <h2>Projetos</h2>
+                <h2>Meus Projetos</h2>
                 <ProjectList />
             </div>
         </Col>

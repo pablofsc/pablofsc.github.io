@@ -18,7 +18,8 @@ import {
     SiExpress,
     SiMaterialui,
     SiPostgresql,
-    SiVuedotjs
+    SiVuedotjs,
+    SiNodedotjs
 } from 'react-icons/si';
 
 const getIcon = (name: string, size: number): ReactElement => {
@@ -55,6 +56,8 @@ const getIcon = (name: string, size: number): ReactElement => {
             return <SiPostgresql size={size} className={className} title='PostgreSQL' />;
         case 'vue':
             return <SiVuedotjs size={size} className={className} title='Vue.js' />;
+        case 'node':
+            return <SiNodedotjs size={size} className={className} title='Node.js' />;
 
         case 'linkedin':
             return <SiLinkedin size={size} className={className} />;

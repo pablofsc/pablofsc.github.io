@@ -22,7 +22,7 @@ const AboutMe = (): ReactElement => {
                 &nbsp;Engenharia de Computação
                 <br />
                 <BsPersonBadge className='aboutMeIcon' />
-                &nbsp;Estagiário na Ebserh
+                &nbsp;Estagiário na DashCommerce
             </p>
         </div>
     );

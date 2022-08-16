@@ -6,7 +6,7 @@
 
 .personalProject {
     display: flex;
-    margin: 30px 0;
+    margin: 30px 0 60px 0;
 }
 
 .personalProjectPicture {
@@ -69,22 +69,22 @@
     .personalProject {
         flex-direction: column;
     }
-    
+
     .personalProjectPicture {
         margin: 0;
     }
-    
+
     .imageWrapper {
         text-align: center;
         padding-bottom: 20px;
         margin: 0;
     }
-    
+
     .personalProjectBottomPart {
         flex-direction: column;
         justify-items: center;
     }
-    
+
     .linkGroup {
         margin: 25px 0;
         text-align: right;
