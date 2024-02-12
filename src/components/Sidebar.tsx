@@ -24,7 +24,7 @@ const SideBar = (): ReactElement => {
                     <SocialNetworkAnchor description='LinkedIn' website='https://www.linkedin.com/in/pablofsc' icon='linkedin' />
                     <SocialNetworkAnchor description='GitHub' website='https://github.com/pablofsc' icon='github' />
                     <SocialNetworkAnchor description='Telegram' website='https://t.me/pablofsc' icon='telegram' />
-                    <SocialNetworkAnchor description='Email' website='mailto:mail@pablofsc.me' icon='email' />
+                    <SocialNetworkAnchor description='Email' website='mailto:pablofsc@outlook.com' icon='email' />
                 </ListGroup>
             </div>
         </Col>
