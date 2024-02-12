@@ -35,7 +35,7 @@ const MainContent = (): ReactElement => {
                     </ul>
 
                     <p>
-                        Trabalho regularmente com Git, integração com APIs REST e bancos de dados relacionais (SQL) e não relacionais (NoSQL).
+                        Trabalho regularmente com Git, integrações com APIs REST e bancos de dados relacionais (SQL) e não relacionais (NoSQL).
                     </p>
                 </p>
             </div>

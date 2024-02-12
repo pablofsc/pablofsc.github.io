@@ -37,7 +37,7 @@ const ProjectList = (): ReactElement => {
                 technologies={['react', 'mui', 'ts', 'heroku', 'node', 'postgres']}
                 backendID='inventory-db-node'
                 backendTitle='API'
-            />
+            />*/}
             <ProjectItem
                 title='Agregador de Busca Reversa por Imagem'
                 description='Junta os principais motores de busca reversa em uma única página. Faz uso de uma API restless feita por mim, hospedada em um servidor Heroku. As imagens carregadas do computador ficam salvas neste servidor de forma temporária, para que os buscadores possam acessar a imagem através da internet.'
@@ -46,7 +46,7 @@ const ProjectList = (): ReactElement => {
                 technologies={['react', 'css', 'ts', 'heroku', 'node']}
                 backendID='image-store'
                 backendTitle='API'
-            /> */}
+            /> 
             <ProjectItem
                 title="Conway's Game of Life"
                 description='Implementação do Jogo da Vida de Conway para navegador. Trata-se de um autômato celular, em que as células na matriz interagem obedecendo a um conjunto pequeno de regras, gerando comportamentos aparentemente ensaiados.'
