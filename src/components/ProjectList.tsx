@@ -8,11 +8,19 @@ import conway from '/src/imgs/conway.png';
 import reverse from '/src/imgs/reverse.png';
 import inventory from '/src/imgs/inventory.png';
 import ans from '/src/imgs/ans.png';
+import quatro from '/src/imgs/quatro.png'
 
 const ProjectList = (): ReactElement => {
     return (
         <div>
             <ProjectItem
+                title='Quatro'
+                description='Quatro é uma recriação do familiar jogo de cartas que tem quatro cores e números de 1 a 9. Por enquanto, o jogo só pode ser jogado localmente, mas estou trabalhando em uma versão online.'
+                imgsrc={quatro}
+                id='quatro'
+                technologies={['angular', 'ts']}
+            />
+            {/* <ProjectItem
                 title='Lista de Operadoras ANS'
                 description='Lista as operadoras de planos de saúdes brasileiras, com informações da Agência Nacional de Saúde Suplementar. Os dados ficam armazenados em um banco PostgreSQL hospedado no Heroku.'
                 imgsrc={ans}
@@ -38,7 +46,7 @@ const ProjectList = (): ReactElement => {
                 technologies={['react', 'css', 'ts', 'heroku', 'node']}
                 backendID='image-store'
                 backendTitle='API'
-            />
+            /> */}
             <ProjectItem
                 title="Conway's Game of Life"
                 description='Implementação do Jogo da Vida de Conway para navegador. Trata-se de um autômato celular, em que as células na matriz interagem obedecendo a um conjunto pequeno de regras, gerando comportamentos aparentemente ensaiados.'

@@ -24,7 +24,7 @@ const ProjectLinks = (props: Properties): ReactElement => {
                 <></>
             )}
 
-            <a href={website + props.id} target='_blank'>
+            <a href={props.id} target='_blank'>
                 <button className='projectLink clickable tridimensional'>Abrir ↗</button>
             </a>
         </span>

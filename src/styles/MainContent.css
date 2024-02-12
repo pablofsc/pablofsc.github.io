@@ -1,10 +1,16 @@
 .textArea {
     color: var(--letters);
     margin: 0 30px 30px 30px;
+    font-size: 15px;
 }
 
 @media (max-width: 500px) { 
     .textArea {
         margin: 20px 5px;
     }
+}
+
+a {
+    color: #00a2ff;
+    text-decoration: none;
 }
