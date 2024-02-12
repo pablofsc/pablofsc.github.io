@@ -8,7 +8,8 @@
     "build": "tsc && vite build",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "cp CNAME dist || copy CNAME dist && gh-pages -d dist"
+    "deploy": "npx gh-pages -d dist",
+    "deploy-cname": "cp CNAME dist || copy CNAME dist && npx gh-pages -d dist"
   },
   "dependencies": {
     "bootstrap": "^5.1.3",
